@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: rgba(248, 247, 245, 0.977);
+}
+
+body {
+  background: url('assets/') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 0;
+}
+
+.main-container {
+  width: 360px;
+  height: auto;
+  padding: 20px;
+  border-radius: 12px;
+  background: linear-gradient(to top, rgba(101, 123, 185, 0.556), rgb(244, 244, 158));
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-container {
+  display: flex;
+  position: relative;
+}
+
+.City-input {
+  flex: 1;
+  padding: 10px 45px 10px 16px;
+  border-radius: 50px;
+  border: 3px solid transparent;
+  background: rgba(70, 72, 63, 0.372);
+  outline: none;
+  font-weight: 500;
+}
+
+.City-input:focus {
+  border: 3px solid rgba(180, 167, 94, 0.332);
+}
+
+.search-btn {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.location-data-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.weather-summary-conatiner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weather-summary-img {
+  width: 100px;
+  height: 100px;
+}
+
+.weather-summary-info {
+  text-align: end;
+}
+
+.weather-conditions-container {
+  display: flex;
+  justify-content: center;
+}
+
+.conditions-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+}
+
+.condition-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  color: rgb(0, 0, 0);
+}
+
+.condition-info h5 {
+  margin: 0;
+  font-size: 14px;
+  color: rgb(244, 244, 237);
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  color: rgb(239, 232, 232);
+}
+
+/* Forecast section */
+.forecast-items-container {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+}
+
+.forecast-items-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.forecast-items-container::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 99px;
+}
+
+.forecast-items-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 99px;
+}
+
+.forecast-item {
+  min-width: 80px;
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  transition: 0.3s background;
+}
+
+.forecast-item:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.forecast-item-img {
+  width: 50px;
+  height: 40px;
+}
+
+/* "City Not Found" Section */
+.section-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    margin-top: 25px;
+    padding: 10px;
+}
+
+.section-message img {
+    height: 180px;
+    width: fit-content;
+}
+

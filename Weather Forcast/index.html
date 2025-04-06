@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Application</title>
+
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+
+  <!-- Material Symbols Outlined -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+  <main class="main-container">
+    
+    <!-- Search Bar -->
+    <header class="input-container">
+      <input class="City-input" placeholder="Search City" type="text" />
+      <button class="search-btn">
+        <span class="material-symbols-outlined">search</span>
+      </button>
+    </header>
+
+    <!-- Weather Info -->
+    <section class="weather-info" style="display: none;">
+
+      <!-- Location -->
+      <div class="location-data-container">
+        <div class="location">
+          <span class="material-symbols-outlined">location_on</span>
+          <h5 class="country-txt">Hyderabad</h5>
+        </div>
+        <h4 class="current-date-txt regular-txt">Sun, 6 April</h4>
+      </div>
+
+      <!-- Weather Summary -->
+      <div class="weather-summary-conatiner">
+        <img src="assets/weather/clouds.svg" class="weather-summary-img" />
+        <div class="weather-summary-info">
+          <h1 class="temp-text">29 °C</h1>
+          <h3 class="condition-txt regular-txt">Cloudy</h3>
+        </div>
+      </div>
+
+      <!-- Single Box: Humidity + Wind -->
+      <div class="weather-conditions-container">
+        <div class="conditions-box">
+          <!-- Humidity -->
+          <div class="condition-item">
+            <span class="material-symbols-outlined">water_drop</span>
+            <div class="condition-info">
+              <h5 class="regular-txt">Humidity</h5>
+              <h5 class="humidity-value-txt">55%</h5>
+            </div>
+          </div>
+
+          <!-- Wind -->
+          <div class="condition-item">
+            <span class="material-symbols-outlined">air</span>
+            <div class="condition-info">
+              <h5 class="regular-txt">Wind Speed</h5>
+              <h5 class="wind-value-txt">2 M/S</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+<div class="forecast-items-container">
+    <div class="forecast-item">
+        <h5 class="forecast-item-date regular-txt">06 April</h5>
+        <img src="assets/weather/thunderstorm.svg" alt="" class="forecast-item-img">
+        <h5 class="forecast-item-temp">29 °C</h5>
+    </div>
+    <div class="forecast-item">
+        <h5 class="forecast-item-date regular-txt">06 April</h5>
+        <img src="assets/weather/thunderstorm.svg" alt="" class="forecast-item-img">
+        <h5 class="forecast-item-temp">29 °C</h5>
+    </div>
+    <div class="forecast-item">
+        <h5 class="forecast-item-date regular-txt">06 April</h5>
+        <img src="assets/weather/thunderstorm.svg" alt="" class="forecast-item-img">
+        <h5 class="forecast-item-temp">29 °C</h5>
+    </div>
+    <div class="forecast-item">
+        <h5 class="forecast-item-date regular-txt">06 April</h5>
+        <img src="assets/weather/thunderstorm.svg" alt="" class="forecast-item-img">
+        <h5 class="forecast-item-temp">29 °C</h5>
+    </div>
+    <div class="forecast-item">
+        <h5 class="forecast-item-date regular-txt">06 April</h5>
+        <img src="assets/weather/thunderstorm.svg" alt="" class="forecast-item-img">
+        <h5 class="forecast-item-temp">29 °C</h5>
+    </div>
+</div>
+    </section>
+    <section class="search-city section-message">
+        <img  src="assets/message/search-city.png">
+        <div>
+        <h1 class="Search City"></h1>
+        <h4 class="regular-txt">
+            Find out the weather condition of the city
+        </h4>
+        </div>
+    </section>
+    <section class="not-found section-message" style="display: none;">
+        <img  src="assets/message/NOT-Founds.jpg">
+        <div>
+        <h1 class="Search City"></h1>
+        <h4 class="regular-txt">
+            Find out the weather condition of the city
+        </h4>
+        </div>
+    </section>
+  </main>
+</body>
+</html>
